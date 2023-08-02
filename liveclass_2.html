@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Function</title>
+</head>
+<body>
+    
+
+
+<script>
+
+/*      
+        --------Function ------
+
+        1. Function Writing 
+        2. Function Naming Convenction 
+        3. .Function Signature 
+
+
+        Regular Function
+        Arrow Function
+        async Function
+
+
+        1.Function paramiter ()
+        2. Function Rest paramiter ()
+        3. Function Return ()
+        4. IIF Function ()
+        4. IIF Function async ()
+
+*/
+
+
+
+
+/*
+
+// ------- Regular Function 
+
+function onLogin(){
+    document.write("This is Regular Functiuon")
+}
+// onLogin()
+
+
+
+// ------- Arry Function
+
+onLogin=()=>{
+    document.write("This ok")
+}
+// onLogin()  
+
+
+
+
+// ------ Async Function Regular And Arrow 
+
+async function onLogin(){
+    await fetch("url link")
+    document.write("This is async Regular Functiuon")
+}
+
+onLogin= async ()=>{
+    await fetch("url link")
+    document.write("This is async Arry  Functiuon")
+}
+
+
+
+
+// -------- Function Paramiter 
+
+function addTwo (x, y) {
+     let addToNumbar = x + y 
+     document.write(addToNumbar);
+}
+addTwo(10, 20)
+
+
+// -------- Function Rest    Paramiter 
+function addTwo (...a) {
+     document.write(a);
+}
+addTwo(10, 20, 25, 50, 65, 15)
+
+
+
+
+
+
+// -------- Function Return 
+
+function marks (written, vaiva){
+    return written + vaiva;
+}
+let assignment = 5;
+let totalMarks = marks(70, 10) + assignment;
+document.write(totalMarks)
+
+
+// -------- IIF Function 
+
+(()=>{
+    document.write("This is IIF Function")
+})()
+
+*/
+
+
+// -------- IIF Function async 
+
+(async()=>{
+    document.write("This is IIF async Function")
+})()
+
+
+</script>
+</body>
+</html>

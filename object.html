@@ -12,9 +12,9 @@
 
     <script>
 
+         /*
 
         // Js Object 
-        /*
         var myPc = {
             brand: "walton",
             color: "silver",
@@ -24,36 +24,32 @@
             processor: "core-i5"
 
         }
-
-        document.write(myPc['processor'])
-        document.write(myPc.ram)
-        */
-
+        // document.write(myPc['processor'])
+        // document.write(myPc.ram)
+       
+        
 
          
         // Js Arry 
-        /*
         var categary = ["Jack", "Pack", "Jhon", "Phone" ]
-
         document.write(categary[2]) 
+        
     
 
-
         var categary = ["Jack", "Pack", "Jhon", "Phone" ]
-
         var i;
         for( i=0; i<categary.length; i=i+1){
-
             document.write(categary[i] + "</br>");
-
         }
       
 
+      
+       
         var categary = ["Jack", "Pack", "Jhon", "Phone", "laptop" ]
-
         for(var item in categary ){
             document.write(categary[item] + "</br>")
         }
+
         
 
         var myPc = {
@@ -63,7 +59,6 @@
             room: "1tr",
             isSsd: false,
             processor: "core-i5"
-
         }
 
         for(var  item in myPc){
@@ -71,7 +66,7 @@
             document.write(myPc[item] + "</br>")
         }
 
-        
+      
 
 
         // Concat arry 
@@ -79,28 +74,30 @@
         var arry1 = ["a", "b", "c"]
         var arry2 = ["d", "e", "f"]
 
-        // var arry3 = arry1.concat(arry2)
         var arry3 = arry2.concat(arry1)
         document.write(arry3)
         
-
-
+         
+      
         // Arry with String 
 
         var Title= "Lern with Boniamin"
-        var TitleArry=Array.from(Title)
+        var TitleArry=Array.from(Title)  // Make with new arry  Form String
 
-        document.write(TitleArry[10])
+        document.write(TitleArry[10])  
         
-
+  
         // Fillter Arry 
         var numArry = [10, 20, 22, 30, 25, 55, 60, 70, 100, 110]
 
-        var resultArry = numArry.filter(function(item){
-            return item>70;
-        })
-
+        var resultArry =numArry.filter(
+            function(item){
+                return item>55
+            }
+        )
         document.write(resultArry)
+
+      
 
        
        
@@ -108,44 +105,157 @@
         var numArry = [10, 20, 22, 30, 25, 55, 60, 70, 100, 110]
         
        var resultArry = numArry.find(function(item){
-            return item>55;
-
+            return item>60;
         })
         document.write(resultArry)
 
-
+          
 
         var numArry = [10, 20, 22, 30, 25, 55, 60, 70, 100, 110]
         
-       var resultArry = numArry.findIndex(function(item){
+        var resultArry = numArry.findIndex(function(item){
             return item>25;
-
         })
         document.write(resultArry)
 
-         
-
-
+        
 
          var numArry = [10, 20, 22, 30, 25, 55, 60, 70, 100, 110]
-        
          numArry.forEach(function(item){
             document.write(item + "</br>")
          })
 
          
 
-
         var numArry = [10, 20, 22, 30, 25, 55, 60, 70, 100, 110]
-
         var resultArry = numArry.includes(99);  // true / fulse
         document.write(resultArry)
          
-
+        
         var numArry = [10, 20, 22, 30, 25, 55, 60, 70, 100, 110]
-        var resultArry = numArry.indexOf(1110)  // Koto Numbar Index .
+        var resultArry = numArry.indexOf(110)  // Koto Numbar Index .
         document.write(resultArry)
-         */
+       
+         
+        
+        var numArry = [10, 20, 22, 30, 25, 55, 60, 70, 100, 110]
+        numArry.push(120)
+        numArry.push(121)
+        numArry.push(125)
+        document.write(numArry)
+
+         
+         
+
+         var numArry = [10, 20, 22, 30, 25, 55, 60, 110]
+         var resultArry = numArry.reverse()
+         document.write(numArry)
+
+
+     
+
+         var numArry = [10, 20, 22, 30, 25, 55, 60, 70, 100, 110]
+         numArry.pop()   // remove the last element of the arry
+         numArry.pop()
+         document.write(numArry)
+
+
+
+         var numArry = [ 55, 50, 80, 10, 90, 20, 15]
+         numArry.sort();   // arrange the small to large numbar 
+        //  numArry.sort().reverse  
+         document.write(numArry)
+
+         
+
+         var numArry = [ 55, 50, 80, 10, 90, 20, 15]
+        //  numArry.splice(index, RemoveCount)
+        //  numArry.splice(0, 4) // Kete Fele daya index 0-4 numbar 
+        // numArry.splice(index, RemoveCount, item) 
+        numArry.splice(2, 0, 56) // Kete Fele daya index 0-4 numbar
+        document.write(numArry)
+
+        
+
+        var country="Bangladesh"
+        var con1 = "Pakistan"
+        var con2 = "India"
+        document.write(
+            // country.charAt(0) // 0 numbar index a kon character mean?
+            // con1.concat(con2)   // Add string to string
+            // country.indexOf("d") // d charactare koto index a ace ?
+            // country.lastIndexOf("a") 
+        )
+
+              
+
+         var country="Bangladesh"
+         document.write(
+            // country.replace("desh", "-deshi") 
+            // country.substr(0,6)    // cute 0 index - 6 index (total 6 cute) 
+         )
+
+      
+
+
+      var country="Bangladesh"
+      document.write(
+        country.toLowerCase()
+        country.toUpperCase()
+      )
+     
+
+
+
+
+     var country="         Bangladesh        "
+     document.write(
+        country.trim().length
+    )
+
+
+
+    //-------- Date Class 
+    var dateObj = new Date()
+    document.write(
+        // dateObj.getDate()
+        // dateObj.getDay()
+        // dateObj.getFullYear()
+        // dateObj.getHours()
+        dateObj.getTime()
+    )
+ 
+ 
+    //-------- Math Class
+    var num = 7.6;
+    document.write(
+        //  Math.abs(num) // Show Real Numbar (7.2)
+        //  Math.ceil(num) // Show Integer Numbar in incress (7.2 = 8)
+        //  Math.floor(num)   // Show Integer Numbar in less (7.2 = 7)
+        // Math.round(num)  // Show Integer Numbar (7.2 = 7 and 7.7 = 8)
+        //  Math.max(12, 51, 100, 5)   
+        //  Math.random() 
+    )
+
+    
+
+    
+    var num =  4.2245478;
+    document.write(
+        // Number.isFinite(num) // Sosim Numbar ki na ?
+        // Number.isInteger(num) // Porno Numbar Ki na ?
+        // Number.parseFloat(num) // string ke unString kore dibe 
+        // Number.parseInt(num)   // integer numbar form floating numbar (7.2 = 7)
+        num.toFixed(2)  // Floatimg numbar kotota gor hobe seta fixet (7.45485454 = 7.33)
+        // num.toString()   //convert to String 
+    )
+
+// */
+
+
+
+
+
 
 
 

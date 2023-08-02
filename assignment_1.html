@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+</head>
+<body>
+
+
+    
+    <script>
+
+    // ---------------- Ans to The Tax Numbar (1) ----------------
+    // ------------------- Online Store Discount Calculator (If-Else Statement) -------
+
+        function calculateDiscountedAmount(totalPurchaseAmount) {
+            let discountPercentage = 0;
+            let discountedAmount = 0;
+
+            if (totalPurchaseAmount >= 50 && totalPurchaseAmount <= 100) {
+                discountPercentage = 5;
+            } else if (totalPurchaseAmount > 100 && totalPurchaseAmount <= 200) {
+                discountPercentage = 10;
+            } else if (totalPurchaseAmount > 200) {
+                discountPercentage = 15;
+            }
+
+            discountedAmount = (totalPurchaseAmount * discountPercentage) / 100;
+            let totalAmountAfterDiscount = totalPurchaseAmount - discountedAmount;
+
+            console.log(`Total Purchase Amount: $${totalPurchaseAmount}`);
+            console.log(`Discounted Amount: $${discountedAmount}`);
+            console.log(`Total Amount after Discount: $${totalAmountAfterDiscount}`);
+
+        }
+        
+        // Here usage argument Your Purchase Amount for test
+        calculateDiscountedAmount(100);
+
+
+
+
+
+    // ---------------- Ans to The Tax Numbar (2) -------------------
+    // ---------------- Filter Even Numbers -------------------
+
+        let numbers = [12, 34, 45, 23, 6, 78, 54, 90];
+
+        let evenNumbers = numbers.filter(
+            function(element) {
+	        return element % 2 === 0;
+        });
+
+        // Printing Filtered Even Numbers
+        console.log(`Printing Filtered Even Numbers: ${evenNumbers}`);
+
+
+
+   
+
+
+    // ---------------- Ans to The Tax Numbar (3) -------------------
+    // ---------------- Multiplication Table Generator For numvar 5 -------------------
+
+        function generateMultiplicationTable(number) {
+        for (let i = 1; i <= 10; i++) {
+                const result = i * number;
+                console.log(`${i} x ${number} = ${result}`);
+            }
+        }
+
+        // Here input argument number 5  for test
+        generateMultiplicationTable(5);
+
+
+
+
+
+
+
+    // ---------------- Ans to The Tax Numbar (4) -------------------
+    // ---------------- Grade Calculator (JavaScript Switch Case) -------------------
+
+        function calculateGrade(score) {
+            switch(true){
+
+            case(score>=90):
+                return "your Result: 'A' "
+                break;
+                
+            case(score>=80):
+                return "your Result: 'B' "
+                break;
+
+            case(score>=70):
+            return "your Result: 'C' "
+                break;
+
+            case(score>60):
+            return "your Result: 'D' "
+                break;
+
+            default:
+                return "your Result: 'F' "
+            }
+    
+        }
+
+        // Here input argument number for test
+        console.log(calculateGrade(90)); 
+
+
+</script>
+
+        
+    </script>
+    
+</body>
+</html>
